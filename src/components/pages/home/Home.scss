@@ -1,0 +1,59 @@
+@import "../../../styles/variables.scss";
+.Home {
+    width: 100%;
+    padding: $main-menu-padding;
+    .HomeOptionsContainer {
+        padding: 15px 0px;
+        width: 100%;
+        border-bottom: 1px solid $bright-blue;
+        .ButtonCreated {
+            button {
+                padding: 10px !important;
+            }
+        }
+    }
+    .DrawContentContainer {
+        width: 100%;
+        min-height: 500px;
+        .DrawItemsLeft {
+            width: 25%;
+            border-right: 1px solid $bright-blue;
+            border-left: 1px solid $bright-blue;
+            padding: 10px;
+            .DrawItem {
+                width: 100%;
+                padding: 15px 0px;
+                border-bottom: 1px solid $bright-blue; 
+                span {
+                    font-weight: 700;
+                }
+                .DrawItemIcon {
+                    margin-top: 10px;
+                    img {
+                        width: 70px;
+                        margin-right: 10px;
+                    }
+                    cursor: pointer;
+                    .LineTypeIconRed {
+                        border-bottom: 2px solid red;
+                        width: 50%;
+                        margin-right: 10px;
+                    }
+                    .LineTypeIconBlack {
+                        border-bottom: 2px solid #000000;
+                        width: 50%;
+                        margin-right: 10px;
+                    }
+                    .LineTypeIconYellow {
+                        border-bottom: 2px solid yellow;
+                        width: 50%;
+                        margin-right: 10px;
+                    }
+                    .LineTypeName {
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+}
